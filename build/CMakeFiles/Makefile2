@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/greynathan/Desktop/nelson_model
+CMAKE_SOURCE_DIR = /home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/greynathan/Desktop/build
+CMAKE_BINARY_DIR = /home/greynathan/Desktop/Nelson_Model_Analysis/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/compute_dfm.dir/clean
 CMakeFiles/compute_dfm.dir/all:
 	$(MAKE) -f CMakeFiles/compute_dfm.dir/build.make CMakeFiles/compute_dfm.dir/depend
 	$(MAKE) -f CMakeFiles/compute_dfm.dir/build.make CMakeFiles/compute_dfm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/greynathan/Desktop/build/CMakeFiles --progress-num=1,2,3,4 "Built target compute_dfm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/greynathan/Desktop/Nelson_Model_Analysis/build/CMakeFiles --progress-num=1,2,3,4 "Built target compute_dfm"
 .PHONY : CMakeFiles/compute_dfm.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/compute_dfm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/greynathan/Desktop/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/greynathan/Desktop/Nelson_Model_Analysis/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/compute_dfm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/greynathan/Desktop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/greynathan/Desktop/Nelson_Model_Analysis/build/CMakeFiles 0
 .PHONY : CMakeFiles/compute_dfm.dir/rule
 
 # Convenience name for target.

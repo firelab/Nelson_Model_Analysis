@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/greynathan/Desktop/nelson_model/deadfuelmoisture.cpp
+/home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model/deadfuelmoisture.cpp
 algorithm
 -
 cstdlib
@@ -20,9 +20,9 @@ sstream
 fstream
 -
 deadfuelmoisture.h
-/home/greynathan/Desktop/nelson_model/deadfuelmoisture.h
+/home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model/deadfuelmoisture.h
 
-/home/greynathan/Desktop/nelson_model/deadfuelmoisture.h
+/home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model/deadfuelmoisture.h
 cmath
 -
 iomanip
@@ -38,9 +38,9 @@ vector
 config.h
 -
 semtime.h
-/home/greynathan/Desktop/nelson_model/semtime.h
+/home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model/semtime.h
 
-/home/greynathan/Desktop/nelson_model/semtime.h
+/home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model/semtime.h
 ctime
 -
 iomanip

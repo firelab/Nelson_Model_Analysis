@@ -1010,37 +1010,54 @@ double Sem::DeadFuelMoisture::meanMoisture( void ) const
 double Sem::DeadFuelMoisture::meanWtdMoisture( void ) const
 {
     double h2o = 0.0; //water in cells
-    double g = 0.0; // 2nd algorithm 
+    double q = 0.0; // flux of water at surface
     double wbr = 0.0;
     std::ofstream outfile;
 
     for ( int i=0; i<m_nodes; i++ )
     {
         wbr += m_w[i] * m_v[i];
-        std::cout << m_stcd << '\n'; 
+        h2o = h2o + (m_w[i] * .4 * (m_v[i]* (Pi* m_radius * m_radius * m_length)));
+        //std::cout << m_stcd << '\n'; 
     }
     wbr = ( wbr > m_wmx ) ? m_wmx : wbr;
-
-    //std::cout << m_state << '\n'; 
-    //std::cout << h2o << '\n'; 
+    
+    // generating the flux of water at the surface depending on the state
+    if ((m_state == 1) or (m_state == 3) or (m_state == 4) or (m_state == 6) or (m_state == 7) or (m_state == 8))
+    {
+        q = m_stca * (2 * Pi * m_radius * (m_radius + m_length)) * (m_sem - m_w[0]);
+    }
+    else if ((m_state == 2) or (m_state == 5))
+    {
+        q = m_stcd * (2 * Pi * m_radius * (m_radius + m_length)) * (m_sem - m_w[0]);
+    }
 
     outfile.open("test.txt", std::ios_base::app); // append instead of overwrite
 
+    // outputing the state, flux of water in all cells and flux of water at the surface
     if (m_name == "stick_1hr")
     {
         outfile << m_state << ',';
+        outfile << h2o << ',';
+        outfile << q << ',';
     }
     else if (m_name == "stick_10hr")
     {
         outfile << m_state << ',';
+        outfile << h2o << ',';
+        outfile << q << ',';
     }
     else if (m_name == "stick_100hr")
     {
         outfile << m_state << ',';
+        outfile << h2o << ',';
+        outfile << q << ',';
     }
     else if (m_name == "stick_1000hr")
     {
-        outfile << m_state << '\n';
+        outfile << m_state << ',';
+        outfile << h2o << ',';
+        outfile << q << '\n';
     }
 
     // Add water film

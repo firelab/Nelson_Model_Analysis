@@ -337,14 +337,14 @@ static const double Scr;    // = 0.285714;
 enum DFM_State
 {
     DFM_State_None          = 0,
-    DFM_State_Adsorption    = 1,
-    DFM_State_Desorption    = 2,
-    DFM_State_Condensation1 = 3,
-    DFM_State_Condensation2 = 4,
-    DFM_State_Evaporation   = 5,
-    DFM_State_Rainfall1     = 6,
-    DFM_State_Rainfall2     = 7,
-    DFM_State_Rainstorm     = 8,
+    DFM_State_Adsorption    = 1, // Adorption
+    DFM_State_Desorption    = 2, // Desorption
+    DFM_State_Condensation1 = 3, // Adorption
+    DFM_State_Condensation2 = 4, // Adorption
+    DFM_State_Evaporation   = 5, // Desorption
+    DFM_State_Rainfall1     = 6, // Adorption
+    DFM_State_Rainfall2     = 7, // Adorption
+    DFM_State_Rainstorm     = 8, // Adorption
     DFM_State_Stagnation    = 9,
     DFM_State_Error         = 10
 };
