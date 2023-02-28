@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model/deadfuelmoisture.cpp
-algorithm
+/home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model/computeFuelMoisture.cpp
+stdlib.h
 -
-cstdlib
--
-ctime
--
-iostream
--
-sstream
--
-fstream
+string.h
 -
 deadfuelmoisture.h
 /home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model/deadfuelmoisture.h
+iostream
+-
+stdio.h
+-
 
 /home/greynathan/Desktop/Nelson_Model_Analysis/nelson_model/deadfuelmoisture.h
 cmath

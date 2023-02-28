@@ -217,17 +217,17 @@ int main(int argc, char *argv[])
                  endAirTemp, endAirHumidity, endSolarRad, endCumRain);
 
         //get the stick moisture contents
-        fuelMoisture_1 = dfm1h->meanWtdMoisture();
-        //fuelMoisture_1 = dfm1h->outerMeanMoisture();
+        //fuelMoisture_1 = dfm1h->meanWtdMoisture();
+        fuelMoisture_1 = dfm1h->outerMeanMoisture();
         //fuelMoisture_1 = dfm1h->medianRadialMoisture();
-        fuelMoisture_10 = dfm10h->meanWtdMoisture();
-        //fuelMoisture_10 = dfm10h->outerMeanMoisture();
+        //fuelMoisture_10 = dfm10h->meanWtdMoisture();
+        fuelMoisture_10 = dfm10h->outerMeanMoisture();
         //fuelMoisture_10 = dfm10h->medianRadialMoisture();
-        fuelMoisture_100 = dfm100h->meanWtdMoisture();
-        //fuelMoisture_100 = dfm100h->outerMeanMoisture();
+        //fuelMoisture_100 = dfm100h->meanWtdMoisture();
+        fuelMoisture_100 = dfm100h->outerMeanMoisture();
         //fuelMoisture_100 = dfm100h->medianRadialMoisture();
-        fuelMoisture_1000 = dfm1000h->meanWtdMoisture();
-        //fuelMoisture_1000 = dfm1000h->outerMeanMoisture();
+        //fuelMoisture_1000 = dfm1000h->meanWtdMoisture();
+        fuelMoisture_1000 = dfm1000h->outerMeanMoisture();
         //fuelMoisture_1000 = dfm1000h->medianRadialMoisture();
 
         if(verbose){
