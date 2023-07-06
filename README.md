@@ -6,6 +6,7 @@ Under the folder nelson_model you will find all of the files that makes the nels
 a function call outerMeanMoisture was added to calculate the mean of moisture contained in the outershell of a log. Updates were also made to
 meanWtdMoisture to allow for the mean of moisture in a log to be calculated again. 
 The calculation of mean, median or outershell mean can now be changed in the computerFuelMoisture.cpp file. 
+** Outershell was calculated by taking the mean of the 3 most outer nodes in the simulated wood piece **
 
 Under the folder input_generation are the scripts used to create files able to be ran by the moisture model. Input_script.py was created to grab and format
 weather data from the Blue Mountain RAWs stations. lat_lon_script.py was used to format modis and viirs data to only include data near the
