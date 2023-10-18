@@ -1,3 +1,6 @@
+## This repo documents the testing of various changes to the Nelson Dead Fuel Moisture Model
+NOTE: This is not an operational implementation of the Nelson model 
+
 # Nelson_Model_Analysis
 
 This repository serves as a compilation of all the data and material used for the Nelson Model Analysis. 
